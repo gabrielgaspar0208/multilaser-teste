@@ -1,0 +1,19 @@
+/* Mixins */
+@import "./mixins/_mixins.scss";
+
+/* Variables */
+@import "./variables/_colors.scss";
+@import "./variables/_fonts.scss";
+@import "./variables/_sizes.scss";
+@import "./variables/_spacing.scss";
+
+/* Steps */
+@import "./steps/_intro.scss";
+@import "./steps/_content.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}

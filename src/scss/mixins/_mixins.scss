@@ -1,0 +1,35 @@
+/* Tipografia */
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin typography-title {
+  font-size: $desk-size-medium-big;
+  line-height: $line-height-biggest;
+  color: $black;
+  font-weight: $weight-max-bold;
+}
+
+@mixin typography-subtitle {
+  font-size: $desk-size-medium-big;
+  line-height: $line-height-biggest;
+  color: $black;
+  font-weight: $weight-max-bold;
+}
+
+@mixin typography-p-main {
+  font-size: $size-main;
+  line-height: $line-height-main;
+  color: $black;
+  font-weight: $weight-max-regular;
+}
+
+@mixin typography-p-small {
+  font-size: $size-small;
+  line-height: $line-height-small;
+  color: $white;
+  font-weight: $weight-bold;
+}
