@@ -1,0 +1,49 @@
+.intro-header {
+  position: relative;
+  img {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .intro-text {
+    @include center;
+    position: absolute;
+    width: 100%;
+    flex-direction: column;
+    text-transform: uppercase;
+    color: $black;
+    margin-top: $margin-medium-big;
+
+    h1 {
+      @include typography-title;
+    }
+
+    p {
+      @include typography-p-main;
+    }
+  }
+
+  .text-containers {
+    .row {
+      margin: $margin-medium-big;
+      text-align: center;
+    }
+
+    .second.row {
+      margin: 0;
+      background-color: $black;
+
+      h2,
+      p {
+        color: $white;
+        padding: 0 $padding-medium-big $padding-medium-big $padding-medium-big;
+      }
+
+      h2 {
+        padding: $padding-medium-big $padding-medium-big 0 $padding-medium-big;
+        margin-bottom: $margin-main;
+      }
+    }
+  }
+}
