@@ -23,11 +23,11 @@ export const Content = () => {
       <div className="content-quality">
         <h2>Maior qualidade sonora que estimula os seus sentidos</h2>
         <p>
-          A interação entre a Soundbar e o Subwoofer entrega uma potência de 300
-          W RMS, com 2.1 canais. São dois alto-falantes integrados e sem a
-          necessidade de configurar diversas caixas de som em sua sala.
-          Acompanhe os jogos de futebol e veja o show da sua banda preferida com
-          mais realismo e emoção.
+          A interação entre a Soundbar e o Subwoofer entrega uma potência de{" "}
+          <strong>300 W RMS,</strong> com 2.1 canais. São dois alto-falantes
+          integrados e sem a necessidade de configurar diversas caixas de som em
+          sua sala. Acompanhe os jogos de futebol e veja o show da sua banda
+          preferida com mais realismo e emoção.
         </p>
         <p>
           E para aprimorar ainda mais os efeitos sonoros, possui três modos de
@@ -41,8 +41,8 @@ export const Content = () => {
         <h2>Garantia</h2>
         <p>
           A Soundbar com Subwoofer Wireless conta com a alta qualidade da marca
-          Pulse e disponibiliza 3 anos de garantia contra defeitos de
-          fabricação.
+          Pulse e disponibiliza <strong>3 anos de garantia</strong> contra
+          defeitos de fabricação.
         </p>
       </div>
     </div>

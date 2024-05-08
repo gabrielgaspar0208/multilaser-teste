@@ -7,6 +7,7 @@ export const Intro = () => {
         <div className="intro-text">
           <h1>Soundbar</h1>
           <p>com Subwoofer Wireless Pulse</p>
+          <span>SP604</span>
         </div>
         <img src={bgTopo} alt="bg-topo-01" />
         <div className="text-containers">

@@ -2,7 +2,7 @@ import { InfoCard } from "../../ui-library/info-card";
 import soundBarWaves from "../../assets/images/content/soundbar+waves_2 1.png";
 import firstCardImg from "../../assets/images/content/SP604_02 2 1.png";
 import secondCardImg from "../../assets/images/content/devices 1.png";
-import thirdCardImg from "../../assets/images/content/SP604_03 1 (1).png";
+import thirdCardImg from "../../assets/images/content/SP604_03 1.png";
 
 export const InfoCards = () => {
   return (
@@ -21,7 +21,7 @@ export const InfoCards = () => {
       <div className="second-row">
         <InfoCard
           title="Alta conectividade"
-          text="Apresenta muitas possibilidades de conexões como auxiliar, coaxial, óptica, HDMI ARC ou porta USB. Use seu aparelho de CD, DVD, videogame, entre outros e aproveite o seu momento. <br> Por meio da conexão Bluetooth 5.0, curta um som intenso direto do seu celular, tablet e outros equipamentos de forma rápida."
+          text="Apresenta muitas possibilidades de conexões como auxiliar, coaxial, óptica, HDMI ARC ou porta USB. Use seu aparelho de CD, DVD, videogame, entre outros e aproveite o seu momento. <br><br> Por meio da conexão Bluetooth 5.0, curta um som intenso direto do seu celular, tablet e outros equipamentos de forma rápida."
           image={secondCardImg}
         />
       </div>

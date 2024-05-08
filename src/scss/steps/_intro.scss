@@ -1,4 +1,6 @@
 .intro-header {
+  @include center;
+  flex-direction: column;
   position: relative;
   img {
     width: 100%;
@@ -45,5 +47,72 @@
         margin-bottom: $margin-main;
       }
     }
+  }
+}
+
+@media (min-width: 1024px) {
+  .intro-text {
+    text-align: center;
+    top: 3%;
+    h1 {
+      @include desk-typography-title;
+    }
+
+    p {
+      @include desk-typography-subtitle;
+    }
+
+    span {
+      @include desk-typography-subtitle;
+      font-weight: $weight-max-bold;
+    }
+  }
+
+  .text-containers {
+    @include center;
+    flex-direction: column;
+    width: 100%;
+
+    .row {
+      width: 100%;
+      @include center;
+      flex-direction: column;
+
+      h2,
+      p {
+        @include container-size;
+      }
+
+      h2 {
+        @include desk-typography-subtitle;
+      }
+    }
+
+    .first {
+      margin-top: $margin-biggest !important;
+    }
+
+    .second {
+      margin: $margin-biggest 0 !important;
+
+      h2 {
+        padding-top: 4.625rem !important;
+        padding-bottom: $padding-medium !important;
+      }
+
+      p {
+        padding-bottom: 4.625rem !important;
+      }
+    }
+
+    .third {
+      margin-bottom: $margin-biggest !important;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .intro-text {
+    top: 5%;
   }
 }

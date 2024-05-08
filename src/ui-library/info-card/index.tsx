@@ -6,13 +6,16 @@ interface InfoCardProps {
 }
 
 export const InfoCard = ({ title, subtitle, text, image }: InfoCardProps) => {
+  const createMarkup = (text: string) => {
+    return { __html: text };
+  };
   return (
     <div className="info-box-container">
       <img src={image} alt="" />
       <div className="text-box">
         <h2>{title}</h2>
         <h3>{subtitle}</h3>
-        <p>{text}</p>
+        <p dangerouslySetInnerHTML={createMarkup(text || "")}></p>
       </div>
     </div>
   );

@@ -6,6 +6,10 @@
   align-items: center;
 }
 
+@mixin container-size {
+  max-width: 800px;
+}
+
 @mixin typography-title {
   font-size: $desk-size-medium-big;
   line-height: $line-height-biggest;
@@ -31,5 +35,26 @@
   font-size: $size-small;
   line-height: $line-height-small;
   color: $white;
+  font-weight: $weight-max-regular;
+}
+
+@mixin desk-typography-title {
+  font-size: $desk-size-biggest !important;
+  line-height: $desk-line-height-biggest !important;
+  color: $black;
+  font-weight: $weight-max-bold;
+}
+
+@mixin desk-typography-subtitle {
+  font-size: $desk-size-big !important;
+  line-height: $desk-line-height-big !important;
+  color: $black;
+  font-weight: $weight-semi-bold !important;
+}
+
+@mixin desk-typography-p-main {
+  font-size: $desk-size-main;
+  line-height: $desk-line-height-main;
+  color: $black;
   font-weight: $weight-max-regular;
 }

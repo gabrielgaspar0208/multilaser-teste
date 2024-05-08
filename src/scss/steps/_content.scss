@@ -6,7 +6,7 @@
 
   .info-box-container {
     display: flex;
-    flex-direction: column-reverse !important;
+    flex-direction: column-reverse;
   }
 
   .info-cards {
@@ -66,5 +66,30 @@
 
   p {
     margin-bottom: $margin-main !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  p {
+    @include desk-typography-p-main;
+  }
+
+  .info-box-container {
+    display: flex;
+    flex-direction: row !important;
+
+    img {
+      width: 50% !important;
+      height: 50% !important;
+    }
+
+    .text-box {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      max-width: 583px;
+      margin: 0 $margin-medium;
+    }
   }
 }
