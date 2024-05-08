@@ -1,0 +1,21 @@
+.content-infos {
+  background-color: $black;
+  display: flex;
+  margin: $margin-main 0;
+}
+
+.info-box-container {
+  @include center;
+  flex-direction: column;
+  margin: $margin-small;
+  flex-wrap: wrap;
+
+  p {
+    @include typography-p-small;
+  }
+
+  img {
+    width: 32px;
+    height: 32px;
+  }
+}
