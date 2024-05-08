@@ -22,7 +22,7 @@ export const Intro = () => {
             <h2>Soundbar com Subwoofer Wireless Pulse</h2>
             <p>Transforme um simples som em uma potência.</p>
           </div>
-          <div className="tertiary row">
+          <div className="third row">
             <p>
               A Soundbar e o Subwoofer Wireless Pulse oferecem, juntos, uma
               experiência de áudio profunda e poderosa. Um efeito que envolve

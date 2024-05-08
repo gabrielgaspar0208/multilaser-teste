@@ -13,7 +13,7 @@
     flex-direction: column;
     text-transform: uppercase;
     color: $black;
-    margin-top: $margin-medium-big;
+    margin-top: $margin-medium;
 
     h1 {
       @include typography-title;
@@ -26,7 +26,7 @@
 
   .text-containers {
     .row {
-      margin: $margin-medium-big;
+      margin: $margin-medium;
       text-align: center;
     }
 

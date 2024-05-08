@@ -14,7 +14,7 @@
 }
 
 @mixin typography-subtitle {
-  font-size: $desk-size-medium-big;
+  font-size: $size-biggest;
   line-height: $line-height-biggest;
   color: $black;
   font-weight: $weight-max-bold;
@@ -31,5 +31,5 @@
   font-size: $size-small;
   line-height: $line-height-small;
   color: $white;
-  font-weight: $weight-bold;
+  font-weight: $weight-max-regular;
 }
