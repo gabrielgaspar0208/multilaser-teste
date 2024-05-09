@@ -7,7 +7,7 @@ import thirdCardImg from "../../assets/images/content/SP604_03 1.png";
 export const InfoCards = () => {
   return (
     <div className="info-cards">
-      <div>
+      <div className="info-image">
         <img src={soundBarWaves} alt="" />
       </div>
       <div className="first-row">

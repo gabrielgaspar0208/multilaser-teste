@@ -1,4 +1,7 @@
 .content-container {
+  max-width: 1920px;
+  margin: 0 auto;
+
   h2,
   h3 {
     margin-bottom: $margin-main;
@@ -21,9 +24,17 @@
     }
 
     .text-box {
+      margin: $margin-medium 0;
       text-align: center;
       h2 {
+        @include typography-subtitle-small;
         margin-bottom: $margin-small;
+      }
+
+      h3 {
+        font-size: $size-regular;
+        line-height: $line-height-main;
+        font-weight: $weight-max-regular;
       }
     }
   }
@@ -31,15 +42,22 @@
   .content-guarantee {
     margin: $margin-medium;
     text-align: center;
+
+    h2 {
+      @include typography-subtitle-small;
+    }
   }
 }
 
 .content-infos {
   @include center;
   background-color: $black;
-  display: flex;
-  padding: $padding-medium 0;
-  flex-wrap: wrap;
+
+  .cards-container {
+    @include center;
+    flex-wrap: wrap;
+    padding: $padding-medium 0;
+  }
 
   .info-box-container {
     @include center;
@@ -54,8 +72,8 @@
     }
 
     img {
-      width: 40px;
-      height: 40px;
+      width: 60px;
+      height: 60px;
     }
   }
 }
@@ -67,16 +85,27 @@
   p {
     margin-bottom: $margin-main !important;
   }
+
+  h2 {
+    @include typography-p-medium;
+  }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1064px) {
+  .content-container {
+    h2 {
+      @include desk-typography-subtitle;
+    }
+  }
   p {
     @include desk-typography-p-main;
   }
 
-  .info-box-container {
-    display: flex;
-    flex-direction: row !important;
+  .info-cards {
+    .info-box-container {
+      display: flex;
+      flex-direction: row !important;
+    }
 
     img {
       width: 50% !important;
@@ -90,6 +119,87 @@
       justify-content: center;
       max-width: 583px;
       margin: 0 $margin-medium;
+    }
+  }
+
+  .content-infos {
+    .info-box-container {
+      display: flex !important;
+      flex-direction: column !important;
+      height: 418px;
+
+      img {
+        width: 100px;
+        height: 100px;
+      }
+
+      p {
+        @include desk-typography-p-main;
+        color: $white;
+      }
+    }
+
+    .cards-container {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: baseline;
+      gap: 55px;
+
+      :nth-child(5) {
+        .text-box {
+          display: flex;
+          justify-content: center;
+
+          p {
+            width: 200px;
+          }
+        }
+      }
+    }
+  }
+
+  .content-quality {
+    @include container-size;
+    margin: $margin-biggest auto 0;
+    width: 100%;
+  }
+
+  .info-image {
+    img {
+      width: 100% !important;
+      height: 100% !important;
+    }
+  }
+
+  .first-row {
+    .info-box-container {
+      flex-direction: row-reverse !important;
+    }
+  }
+
+  .third-row {
+    .info-box-container {
+      @include center;
+      width: 100%;
+      flex-direction: column-reverse !important;
+      margin: $margin-big 0;
+    }
+  }
+
+  .content-guarantee {
+    @include container-size;
+    margin: $margin-biggest auto !important;
+  }
+}
+
+@media (min-width: 1440px) {
+  .cards-container {
+    :nth-child(5) {
+      p {
+        width: 270px;
+      }
     }
   }
 }

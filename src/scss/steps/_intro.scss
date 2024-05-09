@@ -1,11 +1,17 @@
-.intro-header {
-  @include center;
-  flex-direction: column;
-  position: relative;
-  img {
+.intro-container {
+  max-width: 1920px;
+  margin: 0 auto;
+
+  .intro-header {
+    position: relative;
     width: 100%;
-    background-repeat: no-repeat;
-    background-size: contain;
+
+    .image-container {
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
   }
 
   .intro-text {
@@ -15,7 +21,7 @@
     flex-direction: column;
     text-transform: uppercase;
     color: $black;
-    margin-top: $margin-medium;
+    top: 10%;
 
     h1 {
       @include typography-title;
@@ -23,27 +29,39 @@
 
     p {
       @include typography-p-main;
+      font-weight: $weight-semi-bold;
+    }
+
+    span {
+      @include typography-p-main;
+      font-weight: $weight-max-bold;
     }
   }
 
   .text-containers {
     .row {
-      margin: $margin-medium;
       text-align: center;
+      margin: $margin-medium;
+      h2 {
+        @include typography-subtitle-small;
+      }
+
+      p {
+        @include typography-p-main;
+      }
     }
 
     .second.row {
       margin: 0;
       background-color: $black;
-
       h2,
       p {
         color: $white;
-        padding: 0 $padding-medium-big $padding-medium-big $padding-medium-big;
+        padding: 0 $padding-medium $padding-medium-big $padding-medium;
       }
 
       h2 {
-        padding: $padding-medium-big $padding-medium-big 0 $padding-medium-big;
+        padding: $padding-medium $padding-medium 0 $padding-medium;
         margin-bottom: $margin-main;
       }
     }
@@ -51,15 +69,37 @@
 }
 
 @media (min-width: 1024px) {
+  .intro-container {
+    h2 {
+      @include desk-typography-subtitle;
+    }
+    p {
+      @include desk-typography-p-main;
+    }
+  }
+
+  .image-container {
+    img {
+      height: 100vh !important;
+      object-fit: cover;
+      object-position: bottom;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+
   .intro-text {
     text-align: center;
-    top: 3%;
+    top: 3% !important;
     h1 {
       @include desk-typography-title;
     }
 
     p {
-      @include desk-typography-subtitle;
+      font-size: $desk-size-medium-big !important;
+      line-height: $line-height-biggest !important;
+      color: $black;
+      font-weight: $weight-semi-bold !important;
     }
 
     span {
@@ -81,10 +121,6 @@
       h2,
       p {
         @include container-size;
-      }
-
-      h2 {
-        @include desk-typography-subtitle;
       }
     }
 
@@ -108,11 +144,5 @@
     .third {
       margin-bottom: $margin-biggest !important;
     }
-  }
-}
-
-@media (min-width: 1440px) {
-  .intro-text {
-    top: 5%;
   }
 }

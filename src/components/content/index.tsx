@@ -11,14 +11,16 @@ export const Content = () => {
   return (
     <div className="content-container">
       <div className="content-infos">
-        <InfoCard image={antenna} text="Subwoofer Wireless" />
-        <InfoCard image={bluetooth} text="Conexão bluetooth" />
-        <InfoCard image={volume} text="300 W RMS potência total" />
-        <InfoCard image={molecular} text="2.1 canais" />
-        <InfoCard
-          image={cabos}
-          text="Entradas auxiliar (AUX) HDMI (ARC) óptico USB 2.0 | coaxial"
-        />
+        <div className="cards-container">
+          <InfoCard image={antenna} text="Subwoofer Wireless" />
+          <InfoCard image={bluetooth} text="Conexão bluetooth" />
+          <InfoCard image={volume} text="300 W RMS potência total" />
+          <InfoCard image={molecular} text="2.1 canais" />
+          <InfoCard
+            image={cabos}
+            text="Entradas auxiliar (AUX) HDMI (ARC) óptico USB 2.0 | coaxial"
+          />
+        </div>
       </div>
       <div className="content-quality">
         <h2>Maior qualidade sonora que estimula os seus sentidos</h2>

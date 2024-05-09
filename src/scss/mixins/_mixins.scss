@@ -7,7 +7,7 @@
 }
 
 @mixin container-size {
-  max-width: 800px;
+  max-width: 840px;
 }
 
 @mixin typography-title {
@@ -17,18 +17,18 @@
   font-weight: $weight-max-bold;
 }
 
+@mixin typography-subtitle-small {
+  font-size: $size-medium;
+  line-height: $line-height-medium;
+  color: $black;
+  font-weight: $weight-bold;
+}
+
 @mixin typography-subtitle {
   font-size: $size-biggest;
   line-height: $line-height-biggest;
   color: $black;
   font-weight: $weight-max-bold;
-}
-
-@mixin typography-p-main {
-  font-size: $size-main;
-  line-height: $line-height-main;
-  color: $black;
-  font-weight: $weight-max-regular;
 }
 
 @mixin typography-p-small {
@@ -38,11 +38,25 @@
   font-weight: $weight-max-regular;
 }
 
+@mixin typography-p-main {
+  font-size: $size-main;
+  line-height: $line-height-main;
+  color: $black;
+  font-weight: $weight-max-regular;
+}
+
+@mixin typography-p-medium {
+  font-size: $size-big;
+  line-height: $line-height-medium-big;
+  color: $black;
+  font-weight: $weight-bold;
+}
+
 @mixin desk-typography-title {
   font-size: $desk-size-biggest !important;
   line-height: $desk-line-height-biggest !important;
   color: $black;
-  font-weight: $weight-max-bold;
+  font-weight: $weight-max-bold !important;
 }
 
 @mixin desk-typography-subtitle {
@@ -53,8 +67,8 @@
 }
 
 @mixin desk-typography-p-main {
-  font-size: $desk-size-main;
-  line-height: $desk-line-height-main;
+  font-size: $desk-size-main !important;
+  line-height: $desk-line-height-main !important;
   color: $black;
-  font-weight: $weight-max-regular;
+  font-weight: $weight-max-regular !important;
 }
